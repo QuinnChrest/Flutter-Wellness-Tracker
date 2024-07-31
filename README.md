@@ -4,8 +4,8 @@
 I hate how much fluff calorie counting apps have. I just want a simple application where you can set a goal calorie amount and then input the number of calories you ate. Will also expand this out to tracking activities and weight. I have been super interested in looking at Flutter as a stack to build out applications that can be deployed to multiple platforms. I am unsure how far I want to take this application with having a deployed backend with auth so data is stored in the cloud vs in-app.
 
 ### To Do
-- [ ] Go through Flutter documentation and initialize app
-- [ ] Add initial pages/states as well as routing between
+- [x] Go through Flutter documentation and initialize app
+- [x] Add initial pages/states as well as routing between
 - [ ] Implement a data storage solution. contemplating pocketbase
       
 - [ ] Food Tracking Page
