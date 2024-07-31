@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:wellness_tracker/states/activity.dart';
-import 'package:wellness_tracker/states/food.dart';
-import 'package:wellness_tracker/states/weight.dart';
+import 'package:wellness_tracker/pages/activity/activity.dart';
+import 'package:wellness_tracker/pages/food/food.dart';
+import 'package:wellness_tracker/pages/weight/weight.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,13 +41,13 @@ class _HomePage extends State<HomePage> {
     Widget page;
     switch (currentPage) {
       case Page.Activity:
-        page = const ActivityPage();
+        page = const Activity();
         break;
       case Page.Food:
-        page = const FoodPage();
+        page = const Food();
         break;
       case Page.Weight:
-        page = const WeightPage();
+        page = const Weight();
         break;
       default:
         throw UnimplementedError('no widget for $currentPage');

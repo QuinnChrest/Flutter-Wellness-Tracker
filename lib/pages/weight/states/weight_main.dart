@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
+import '../../../models/PageState.dart';
 
-class ActivityPage extends StatefulWidget {
-  const ActivityPage({super.key});
+class WeightMain extends StatefulWidget {
+  final Function updateState;
+
+  const WeightMain({super.key, required this.updateState});
 
   @override
-  State<ActivityPage> createState() => _ActivityPage();
+  State<WeightMain> createState() => _WeightMain();
 }
 
-class _ActivityPage extends State<ActivityPage> {
+class _WeightMain extends State<WeightMain> {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -21,14 +24,26 @@ class _ActivityPage extends State<ActivityPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text("Food"),
+        title: const Text("Weight"),
+        actions: [
+          IconButton(
+            onPressed: () => widget.updateState(PageState.Graph),
+            tooltip: "Graphs",
+            icon: const Icon(Icons.leaderboard),
+          ),
+          IconButton(
+            onPressed: () => widget.updateState(PageState.Settings),
+            tooltip: "Settings",
+            icon: const Icon(Icons.settings),
+          ),
+        ],
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Activity:',
+              'Weight:',
             ),
             Text(
               '$_counter',

@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
+import '../../../models/PageState.dart';
 
-class FoodPage extends StatefulWidget {
-  const FoodPage({super.key});
+class FoodMain extends StatefulWidget {
+  final Function updateState;
+
+  const FoodMain({super.key, required this.updateState});
 
   @override
-  State<FoodPage> createState() => _FoodPage();
+  State<FoodMain> createState() => _FoodMain();
 }
 
-class _FoodPage extends State<FoodPage> {
+class _FoodMain extends State<FoodMain> {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -22,6 +25,18 @@ class _FoodPage extends State<FoodPage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text("Food"),
+        actions: [
+          IconButton(
+            onPressed: () => widget.updateState(PageState.Graph),
+            tooltip: "Graphs",
+            icon: const Icon(Icons.leaderboard),
+          ),
+          IconButton(
+            onPressed: () => widget.updateState(PageState.Settings),
+            tooltip: "Settings",
+            icon: const Icon(Icons.settings),
+          ),
+        ],
       ),
       body: Center(
         child: Column(
