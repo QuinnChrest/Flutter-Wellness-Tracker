@@ -1,16 +1,28 @@
-# wellness_tracker
+# Flutter Wellness Tracker
 
-A new Flutter project.
+### Description
+I hate how much fluff calorie counting apps have. I just want a simple application where you can set a goal calorie amount and then input the number of calories you ate. Will also expand this out to tracking activities and weight. I have been super interested in looking at Flutter as a stack to build out applications that can be deployed to multiple platforms. I am unsure how far I want to take this application with having a deployed backend with auth so data is stored in the cloud vs in-app.
 
-## Getting Started
+### To Do
+- [ ] Go through Flutter documentation and initialize app
+- [ ] Add initial pages/states as well as routing between
+- [ ] Implement a data storage solution. contemplating pocketbase
+      
+- [ ] Food Tracking Page
+  - [ ] Scroll view to view logged food for that day
+  - [ ] ability to view previous logs
+  - [ ] ability to add food items
+  - [ ] settings page for editing various goals
+  - [ ] stats page to view graphs representing data over time
+     
+- [ ] Activity Tracking Page
+  - [ ] Scroll view to view logged activity for that day
+  - [ ] ability to view previous logs
+  - [ ] ability to add activities
+  - [ ] settings page for editing various goals
+  - [ ] stats page to view graphs representing data over time
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [ ] Weight Tracking Page
+  - [ ] ability to log weight
+  - [ ] settings page for editing various goals
+  - [ ] stats page to view graphs representing data over time
