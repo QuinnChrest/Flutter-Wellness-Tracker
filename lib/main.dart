@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:pocketbase/pocketbase.dart';
 import 'package:wellness_tracker/pages/activity/activity.dart';
 import 'package:wellness_tracker/pages/food/food.dart';
 import 'package:wellness_tracker/pages/weight/weight.dart';
+
+final pb = PocketBase('http://127.0.0.1:8090');
 
 void main() {
   runApp(const MyApp());

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wellness_tracker/pages/activity/states/activity_graph.dart';
 import 'package:wellness_tracker/pages/activity/states/activity_main.dart';
 import 'package:wellness_tracker/pages/activity/states/activity_settings.dart';
-import '../../models/PageState.dart';
+import '../../models/page_state.dart';
 
 class Activity extends StatefulWidget {
   const Activity({super.key});

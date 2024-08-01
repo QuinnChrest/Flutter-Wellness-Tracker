@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wellness_tracker/pages/food/states/food_graph.dart';
 import 'package:wellness_tracker/pages/food/states/food_settings.dart';
 import 'package:wellness_tracker/pages/food/states/food_main.dart';
-import '../../models/PageState.dart';
+import '../../models/page_state.dart';
 
 class Food extends StatefulWidget {
   const Food({super.key});

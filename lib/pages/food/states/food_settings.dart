@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wellness_tracker/models/PageState.dart';
+import 'package:wellness_tracker/models/page_state.dart';
 
 class FoodSettings extends StatefulWidget {
   final Function updateState;

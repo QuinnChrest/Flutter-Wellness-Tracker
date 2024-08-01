@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wellness_tracker/pages/weight/states/weight_graph.dart';
 import 'package:wellness_tracker/pages/weight/states/weight_main.dart';
 import 'package:wellness_tracker/pages/weight/states/weight_settings.dart';
-import '../../models/PageState.dart';
+import '../../models/page_state.dart';
 
 class Weight extends StatefulWidget {
   const Weight({super.key});
